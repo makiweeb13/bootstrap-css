@@ -4,8 +4,9 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding: 15px;
-    background-image: url(./images/gloomy-background.jpg);
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/gloomy-background.jpg);
     background-image: no-repeat;
     background-size: cover;
     color: #cec7b6;
@@ -53,4 +54,15 @@ button:hover {
 
 .buttons {
     margin: 10px;
+}
+
+@media screen and (max-width: 430px) {
+    .buttons {
+        transform: scale(0.8);
+        margin: 0;
+    }
+    .title {
+        width: 270px;
+        margin: 50px 0 70px 0;
+    }
 }
