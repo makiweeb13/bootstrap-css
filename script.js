@@ -24,10 +24,12 @@ function shuffleImg() {
 shuffleBtn.addEventListener('click', () => shuffleImg());
 
 addTextBtn.addEventListener('click', () => {
+    
     if (charCount <= 1000) {
         let input = document.getElementById('input-text').value;
-        paragraph.innerHTML += `<p>${input}</p>`;
-        charCount += input.length;
-        input = '';   
+        paragraph.innerHTML += input;
+        charCount += input.length;   
+        document.getElementById('input-text').value = '';   
     }
+    
 });
