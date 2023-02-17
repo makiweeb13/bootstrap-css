@@ -21,15 +21,15 @@ function shuffleImg() {
     }   
 }
 
-shuffleBtn.addEventListener('click', () => shuffleImg());
-
-addTextBtn.addEventListener('click', () => {
-    
+function appendText() {
     if (charCount <= 1000) {
         let input = document.getElementById('input-text').value;
         paragraph.innerHTML += input;
         charCount += input.length;   
         document.getElementById('input-text').value = '';   
     }
-    
-});
+}
+
+shuffleBtn.addEventListener('click', () => shuffleImg());
+
+addTextBtn.addEventListener('click', () => appendText());
