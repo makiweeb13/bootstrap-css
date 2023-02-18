@@ -18,6 +18,12 @@ h2 {
     font-size: 20px;
 }
 
+h3 {
+    padding: 10px 10px 7px 0;
+    color: #e6e6e6;
+    font-size: 15px;
+}
+
 p {
     position: relative;
     text-align: justify;
@@ -70,22 +76,27 @@ input {
     height: 2.5rem;
     padding: 5px;
     border-radius: 5px;
+    margin: 0;
 }
 
-/* .img-display {
-    transition: linear 3s;
-} */
+.img-display {
+    height: 200px;
+}
 
-@keyframes fadeInOut {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+.edit-wrap {
+    max-width: 400px;
+}
+
+.find,
+.replace-with {
+    width: 60%;
+}
+
+.center-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 430px) {
