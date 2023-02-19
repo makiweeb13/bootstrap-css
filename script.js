@@ -34,15 +34,11 @@ function appendText() {
 }
 
 function findAndReplace() {
-    let paragraph2 = document.querySelector('.center-par').textContent.split(' ');
-    for (let i = 0; i < paragraph2.length; i++) {
-        if (paragraph2[i] === find.value) {
-            paragraph2[i] = replaceWith.value;
-        }
-    }
+    let paragraph2 = document.querySelector('.center-par').textContent;
+    let edited = paragraph2.replaceAll(find.value, replaceWith.value);
     find.value = '';
     replaceWith.value = '';
-    document.querySelector('.center-par').textContent = paragraph2.join(' ');
+    document.querySelector('.center-par').textContent = edited;
 }
 
 shuffleBtn.addEventListener('click', () => shuffleImg());
